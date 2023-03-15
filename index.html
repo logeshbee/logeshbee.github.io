@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Logesh's Portfolio</title>
-    <meta name="description" content="Student, Aspiring Web Developer"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="HTML, CSS, JavaScript, Content, Youtube, Google, Meta,designer, developer, react, typescript, mongodb, rust, mysql, fullstack, frontend, tailwind, react"/>
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large">
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Include Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Logesh - Portfolio</title>
 </head>
-
-<style>
-    body{
-        font-family: DM Sans;
-        background-color: rgb(50, 60, 69);
-        color: rgb(221, 221, 221);
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0%;
-        margin: 0;
-    }
-    h1{
-        padding: 0.4rem;
-        margin: 0%;
-
-    }
-    h2{
-        color: aquamarine;
-        padding: 0.4rem;
-        margin: 0%;
-    }
-    ul{
-        list-style: none;
-        padding: 0%;
-        margin: 0;
-    }
-    .ilink{
-        text-decoration: none;
-        color: rgb(158, 218, 255);
-    }
-    #link{
-        color: rgb(255, 242, 0);
-        text-decoration: none;
-    }
-</style>
-
-<body>
-
-    <div style="margin-top:1.9rem;">
-        <h1>B.Logesh</h1>
-        <i style="color: darkgrey; ">Student, Aspiring Web Developer</i>
-    </div>
-
-    <div style="margin-top:1.9rem;">
-        <h2>Education</h2>
-        <p style="margin-top: 2px;">Studying at PMGHSS, Kerala</p>
-    </div>
-
-    <div style="margin-top:1.9rem;">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python Beginner</li>
-            <li>Photographer & Editor</li>
-            <li>Singer</li>
-            <li>Cook</li>
-        </ul>
-    </div>
-
-    
-    <div style="margin-top:1.9rem;">
-    <h2>Social Links</h2>
-
-    <ul id="link">
-        <li> <a class="ilink" href="mailto:logeshmohan1106@gmail.com">Gmail</a> </li>
-        <li> <a class="ilink" href="https://github.com/logeshbee">GitHub</a> </li>
-        <li> <a class="ilink" href="https://instagram.com/logesh_bee">Instagram</a> </li>
+<body class="bg-gray-200 font-[Raleway]">
+  
+  <!-- Navigation bar section -->
+  <nav class="flex items-center justify-center md:justify-between backdrop-blur-xl bg-white text-black p-6">
+    <div class="font-semibold text-center text-xl">Logesh</div>
+    <ul class="hidden md:flex ">
+      <li class="mx-4"><a href="#about">About</a></li>
+      <li class="mx-4"><a href="#projects">Projects</a></li>
+      <li class="mx-4"><a href="#contact">Contact</a></li>
     </ul>
-    </div>
+  </nav>
 
+  <!-- Header section -->
+    <header class="bg-green-800 text-white">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-4">
+        <div class="mb-10 md:mb-0 p-4 md:p-0">
+        <h1 class="text-3xl md:text-5xl font-semibold mb-4">Welcome to my portfolio!</h1>
+        <p class="text-md md:text-lg mb-6">I'm Logesh, a front-end developer with a passion for building beautiful, user-friendly websites.</p>
+        <a href="#about" class="bg-white text-blue-800 py-2 px-4 rounded hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out">Learn more about me</a>
+        </div>
+        <div class="">
+        <div class="flex justify-center">
+            <img src="https://picsum.photos/400" alt="Profile picture" class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg">
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="bg-white py-20  p-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+            <img src="https://picsum.photos/300" alt="Profile picture" class="w-full object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2 md:pl-10">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-800 text-lg mb-6">Hi, I'm Logesh, a front-end developer with several years of experience in creating responsive, accessible, and performant websites. I specialize in HTML, CSS, JavaScript, and popular frameworks like React and Vue.</p>
+            <ul class="list-disc list-inside mb-6">
+                <li class="mb-2">I have a keen eye for design and can turn wireframes and mockups into pixel-perfect layouts.</li>
+                <li class="mb-2">I'm passionate about web standards and strive to make my code as clean, concise, and reusable as possible.</li>
+                <li class="mb-2">I enjoy learning new technologies and techniques, and keeping up with the latest trends and best practices in the industry.</li>
+            </ul>
+            <a href="#contact" class="bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out">Get in touch with me</a>
+            </div>
+        </div>
+    </section>
+
+
+
+  <!-- Projects section -->
+  <section id="projects" class="bg-white py-20 p-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-100 transition-all duration-500 ease-in-out hover:scale-[102%] hover:shadow-2xl p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2">Project 1</h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis finibus, malesuada purus ac, eleifend libero.</p>
+          <a href="#" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700">View Project</a>
+        </div>
+        <div class="bg-gray-100 transition-all duration-500 ease-in-out hover:scale-[102%] hover:shadow-2xl p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2">Project 2</h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis finibus, malesuada purus ac, eleifend libero.</p>
+          <a href="#" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700">View Project</a>
+        </div>
+        <div class="bg-gray-100 transition-all duration-500 ease-in-out hover:scale-[102%] hover:shadow-2xl p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2">Project 3</h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis finibus, malesuada purus ac, eleifend libero.</p>
+          <a href="#" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+    <section id="contact" class="bg-gray-200 py-20  p-4">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+        <form action="#" method="post" class="max-w-lg mx-auto">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-800 font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="border border-gray-400 p-2 w-full" placeholder="Enter your name">
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-800 font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="border border-gray-400 p-2 w-full" placeholder="Enter your email address">
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-gray-800 font-bold mb-2">Message</label>
+            <textarea name="message" id="message" rows="5" class="border border-gray-400 p-2 w-full" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700">Submit</button>
+        </form>
+    </div>
+    </section>
 </body>
 </html>
